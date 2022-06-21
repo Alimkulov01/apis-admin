@@ -11,7 +11,6 @@ import TeachersPage from './Page/TeachersPage';
 import StatisticPage from './Page/StatisticPage';
 import GroupsPage from './Page/GroupsPage';
 import './assets/style/index.scss';
-import './assets/style/theme/light.scss';
 import SideBar from './container/SideBar/SideBar';
 import Header from './container/Header';
 import LoginPage from './Page/LoginPage';

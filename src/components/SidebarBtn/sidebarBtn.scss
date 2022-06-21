@@ -1,0 +1,82 @@
+@import '../../assets/style/index.scss';
+
+.sidebarBtn{
+	position: relative;
+	display: flex;
+	padding: 13px 40px;
+	align-items: center;
+	position: relative;
+	transition: all ease-in-out 0.5s;
+	margin-bottom: 20px;
+	&::before{
+		content: "";
+		position: absolute;
+		width: 4px;
+		height: 0;
+		background: $blue;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		transition: all ease-in-out 0.2s;
+		margin: auto;
+	}
+	&__text{
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		color: #000000;
+		opacity: 0.5;
+		
+	}
+	&__icon{
+		margin-right: 10px;
+		svg{
+			path{
+				fill: rgba(0, 0, 0, 0.6);
+			}
+		}
+	}
+	&.active{
+		background: #f2f3fe;
+		.sidebarBtn__text{
+			color: $blue;
+			opacity: 1;
+		}
+		.sidebarBtn__icon{
+			svg{
+				path{
+					fill: $blue;
+				}
+			}
+		}
+		&::before{
+			height: 100%;
+		}
+	}
+	&:hover{
+		background: #f2f3fe;
+		.sidebarBtn__text{
+			color: $blue;
+			opacity: 1;
+		}
+		.sidebarBtn__icon{
+			svg{
+				path{
+					fill: $blue;
+				}
+			}
+		}
+		&::before{
+			height: 100%;
+		}
+	}
+
+		
+
+		
+	
+	
+
+}

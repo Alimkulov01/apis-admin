@@ -24,7 +24,7 @@ const AdminListItem = ({name ,surname, phoneNumber, WorkingTime , LastUsedTime ,
 				</span>
 			</div>
 			<div className="admin-list">
-
+				
 			</div>
 		</Link>
 	)

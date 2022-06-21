@@ -1,9 +1,8 @@
-// import axios from 'axios';
 import axios from 'axios';
 import { useRef, useState } from 'react';
 import request from '../../services';
+import './login.scss';
 
-// import LogoSvg from '../../assets/images/icons/LogoSvg.js';
 
 const LoginPage =({setToken})=>{
 	

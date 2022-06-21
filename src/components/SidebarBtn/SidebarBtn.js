@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-
+import './sidebarBtn.scss';
 
 const SidebarBtn = ({path , name , icon, dataSet})=>{
 

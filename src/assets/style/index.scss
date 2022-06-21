@@ -1,3 +1,9 @@
+$white: #ffff;
+$blue: #3661ED;
+$red: #D70000;
+$green : #028A53;
+$yellow: #FECF28;
+$background: #FDFDFD;
 
 body{
 	margin: 0;
@@ -15,7 +21,19 @@ a{
 	text-decoration: none;
 }
 
-
+.app{
+    &-inner{
+		display: flex;
+		align-items: flex-start;
+		width: 100%;
+		&-left{
+			width: 17%;
+		}
+		&-right{
+			width: 83%;
+		}
+	}
+}
 
 ul{
 	list-style: none;

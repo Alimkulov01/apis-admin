@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useState } from "react";
 import { Link, useMatch } from "react-router-dom";
-
+import './header.scss';
 import userimg from '../../assets/images/unsplash_mEZ3PoFGs_k.svg'
 
 const Header = ({props , notificationNumber =4  , username = 'Melissa Rose'}) =>{

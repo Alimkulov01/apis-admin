@@ -3,7 +3,7 @@
 
 import { useEffect } from "react";
 import SidebarBtn from "../../components/SidebarBtn/SidebarBtn";
-
+import './sideBar.scss'
 
 
 const SideBar  =({logo})=>{
