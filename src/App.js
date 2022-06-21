@@ -15,6 +15,7 @@ import './assets/style/theme/light.scss';
 import SideBar from './container/SideBar/SideBar';
 import Header from './container/Header';
 import LoginPage from './Page/LoginPage';
+import { GetData } from './hook';
 
 
 const token = 'asdasdasdasdadasdad';
@@ -23,7 +24,7 @@ const token = 'asdasdasdasdadasdad';
 
 
 function App() {
-
+  
   const defaultDark = window.matchMedia('(prefers-color-scheme : light)').matches;
   const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
 
