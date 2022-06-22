@@ -16,6 +16,7 @@ import SideBar from './container/SideBar/SideBar';
 import Header from './container/Header';
 import LoginPage from './Page/LoginPage';
 import { GetData } from './hook';
+import Modal from './components/Modal';
 
 
 const token = 'asdasdasdasdadasdad';
@@ -24,7 +25,7 @@ const token = 'asdasdasdasdadasdad';
 
 
 function App() {
-  
+
   const defaultDark = window.matchMedia('(prefers-color-scheme : light)').matches;
   const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
 
@@ -38,9 +39,13 @@ function App() {
     console.log('ok');
   }
 
-
+  const [state, setState] = useState(false)
   return (
     <div className={`app ${theme}`} onLoad={appLoad}>
+      {state ? (<Modal onClose={() => setState(false)}>
+        This is a modal
+      </Modal>): null}
+    <button onClick={() => setState(true)}>open modal</button>
       <Router>
             {
               token ? (
