@@ -5,7 +5,7 @@ import './Adlist.scss'
 
 
 
-const AdminListItem = ({ AdminImg,name  ,surname, phoneNumber, WorkingTime , LastUsedTime , Userid})=>{
+const AdminListItem = ({ AdminImg,name  ,surname, phoneNumber = 938791222, WorkingTime , LastUsedTime , Userid =0})=>{
 
 	const [ adminState , setAdminState ] =useState(false)
 
@@ -27,13 +27,14 @@ const AdminListItem = ({ AdminImg,name  ,surname, phoneNumber, WorkingTime , Las
 		<div  className="admin-list" id={Userid+1}>
 			<div className="admin-list-left">
 				<div className="admin-list-left__index">
-					{Userid+1}
+					{Userid +1}
+
 				</div>
 				<div className="admin-list-left-img">
 					<img className="admin-list-left-img__item" src={AdminImg} alt=""/>
 				</div>
 				<Link to={':userId'} className="admin-list-left-name">
-					<span className="admin-list-left-name__text">{surname}</span>
+					{/* <span className="admin-list-left-name__text">{surname}</span> */}
 					<span className="admin-list-left-name__text">{name}</span>
 				</Link>
 			</div>

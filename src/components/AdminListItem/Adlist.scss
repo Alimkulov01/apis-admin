@@ -1,7 +1,6 @@
 .admin-list{
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 	background: #FFFF;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 	padding: 5px 20px;
@@ -9,6 +8,7 @@
 	&-left{
 		display: flex;
 		align-items: center;
+		width: 35%;
 		&__index{
 			font-family: 'Poppins';
 			font-style: normal;
@@ -37,6 +37,7 @@
 		&-name{
 			display: flex;
 			align-items: center;
+			text-align: left;
 			&__text{
 				font-family: 'Poppins';
 				font-style: normal;
@@ -44,7 +45,7 @@
 				font-size: 14px;
 				line-height: 20px;
 				color: #000000;
-
+				text-align: left;
 				&:first-child{
 					margin-right: 5px;
 				}
@@ -54,7 +55,7 @@
 	}
 
 	&-number{
-		
+		width: 25%;
 		&__text{
 			font-family: 'Poppins';
 			font-style: normal;
@@ -66,7 +67,7 @@
 	}
 
 	&-workDay{
-
+		width: 20%;
 		&__text{
 			font-family: 'Poppins';
 			font-style: normal;
@@ -74,10 +75,11 @@
 			font-size: 14px;
 			line-height: 20px;
 			color: #000000;
+			text-align: left;
 		}
 	}
 	&-lastWorkingTime{
-		
+		width: 20%;
 		&__text{
 			font-family: 'Poppins';
 			font-style: normal;
@@ -85,6 +87,7 @@
 			font-size: 14px;
 			line-height: 20px;
 			color: #000000;
+
 		}
 	}
 
