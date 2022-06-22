@@ -1,0 +1,161 @@
+.admin-list{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #FFFF;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+	padding: 5px 20px;
+	box-sizing: border-box;
+	&-left{
+		display: flex;
+		align-items: center;
+		&__index{
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 20px;
+			color: #000000;
+			margin-right: 10px;
+		}
+
+		&-img{
+			width: 35px;
+			height: 35px;
+			border: 1px solid red;
+			border-radius: 50%;
+			box-sizing: border-box;
+			overflow: hidden;
+			margin-right: 15px;
+			&__item{
+				object-fit: cover;
+				width: 35px;
+				height: 35px;
+			}
+		}
+
+		&-name{
+			display: flex;
+			align-items: center;
+			&__text{
+				font-family: 'Poppins';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 20px;
+				color: #000000;
+
+				&:first-child{
+					margin-right: 5px;
+				}
+			}
+		}
+
+	}
+
+	&-number{
+		
+		&__text{
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 20px;
+			color: #000000;
+		}
+	}
+
+	&-workDay{
+
+		&__text{
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 20px;
+			color: #000000;
+		}
+	}
+	&-lastWorkingTime{
+		
+		&__text{
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 20px;
+			color: #000000;
+		}
+	}
+
+
+	&-action{
+		outline: none;
+		border: none;
+		background: transparent;
+		position: relative;
+		cursor: pointer;
+		&-before{
+			position: absolute;
+			right: 13px;
+			top: -21px;
+			transform: rotate(-180deg);
+			box-shadow: 6px 6px 119px rgba(0, 0, 0, 0.2);
+		}
+		&-menu{
+			position: absolute;
+			background: #FFFFFF;
+			box-shadow: 6px 6px 17px rgba(0, 0, 0, 0.2);
+			border-radius: 2px;
+			display: flex;
+			flex-direction: column;
+			left: -60px;
+			top: 50px;
+			display: none;
+
+			&.active{
+				display: block;
+			}
+			&-button{
+				background-color: transparent;
+				border: none;
+				cursor: pointer;
+				text-align: left;
+				display: flex;
+				align-items: center;
+				padding: 8px 20px;
+
+				&:hover{
+					background: rgba(0, 0, 0, 0.05);
+					opacity: 0.8;
+					box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.2);
+				}
+
+				&__icon{
+					margin-right: 5px;
+				}
+
+				&__text{
+					width: 100%;
+
+					&.edit{
+						font-style: normal;
+						font-weight: 400;
+						font-size: 14px;
+						line-height: 21px;
+						color: #037A4A;
+					}
+					&.delate{
+						font-style: normal;
+						font-weight: 400;
+						font-size: 14px;
+						line-height: 21px;
+						color: #CB0D0D;
+					}
+				}
+			}
+		}
+
+		
+	}
+}	

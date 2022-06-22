@@ -27,7 +27,6 @@ const Header = ({props , notificationNumber =4  , username = 'Melissa Rose'}) =>
 
 	const LogOutHandel = ()=>{
 		window.localStorage.removeItem('sessionToken')
-
 	}
 
 	return(
