@@ -41,10 +41,6 @@ function App() {
   const [state, setState] = useState(false)
   return (
     <div className={`app ${theme}`}>
-      {state ? (<Modal onClose={() => setState(false)}>
-        This is a modal
-      </Modal>): null}
-       <button onClick={() => setState(true)}>open modal</button>
       <Router>
             {
               token ? (

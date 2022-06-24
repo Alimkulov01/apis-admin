@@ -1,22 +1,10 @@
-
-
-
-import { useEffect } from "react";
 import SidebarBtn from "../../components/SidebarBtn/SidebarBtn";
-import './sideBar.scss'
-
+import './sideBar.scss';
 
 const SideBar  =({logo})=>{
-	
-	const pathname = window.location.pathname; 
-	
-	useEffect(()=>{
-		return()=>{
-			console.log(pathname);
-		}
-	}, [])
-	
 
+
+	
 	return(
 		<div className="sidebar">
 			<div className="sidebar-logo">
