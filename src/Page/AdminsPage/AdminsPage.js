@@ -1,10 +1,12 @@
-
+import AdminListWrapper from "../../container/AdminListWrapper/AdminListWrapper"
 
 
 const AdminsPage =()=>{
 	return(
-		<div className="">
-			AdminsPage
+		<div className="admins-page">	
+			<div className="admins-page-inner">
+				<AdminListWrapper/>
+			</div>
 		</div>
 	)
 }

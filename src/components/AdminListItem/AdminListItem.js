@@ -11,7 +11,7 @@ const AdminListItem = ({ AdminImg,name  ,surname, phoneNumber = 938791222, Worki
 
 	const AdminHandelAction =()=>{
 		setAdminState(!adminState)
-		console.log(adminState);
+		userActionHendlerFn()
 	}
 	const [delateSstate, setDelateSstate] = useState(false)
 
@@ -20,6 +20,15 @@ const AdminListItem = ({ AdminImg,name  ,surname, phoneNumber = 938791222, Worki
 		setDelateSstate(!delateSstate)
 		console.log('ochildi');
 	} 
+
+	const userActionHendlerFn = (e)=>{
+		const btn = document.querySelectorAll('.admin-list-action-menu')
+		btn.forEach((item)=>{
+			item.classList.remove('active')
+		})
+	}
+
+
 	return(
 
 		
@@ -33,7 +42,7 @@ const AdminListItem = ({ AdminImg,name  ,surname, phoneNumber = 938791222, Worki
 				<div className="admin-list-left-img">
 					<img className="admin-list-left-img__item" src={AdminImg} alt=""/>
 				</div>
-				<Link to={':userId'} className="admin-list-left-name">
+				<Link to={`:${Userid+1}`} className="admin-list-left-name">
 					{/* <span className="admin-list-left-name__text">{surname}</span> */}
 					<span className="admin-list-left-name__text">{name}</span>
 				</Link>
@@ -52,7 +61,7 @@ const AdminListItem = ({ AdminImg,name  ,surname, phoneNumber = 938791222, Worki
 				</span>
 			</div>
 
-			<button className="admin-list-action" onClick={AdminHandelAction}>
+			<button className="admin-list-action" onClick={AdminHandelAction} >
 				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<g opacity="0.5">
 					<path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -61,7 +70,7 @@ const AdminListItem = ({ AdminImg,name  ,surname, phoneNumber = 938791222, Worki
 					</g>
 				</svg>
 
-				<div className={`admin-list-action-menu ${adminState ? 'active' : ''}`}>
+				<div className={`admin-list-action-menu ${adminState ? 'active' : ''}`} >
 				<span className="admin-list-action-before"><svg width="25" height="20" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.411 7.40678C5.21215 7.69378 4.78784 7.69378 4.589 7.40678L0.347536 1.28475C0.117796 0.953146 0.355124 0.5 0.758534 0.5L9.24147 0.500001C9.64488 0.500001 9.8822 0.953147 9.65246 1.28475L5.411 7.40678Z" fill="white"/></svg></span>
 					<Link to={'#'}  className="admin-list-action-menu-button" id="">
 						<span className="admin-list-action-menu-button__icon">
