@@ -1,0 +1,139 @@
+.finance {
+  padding: 0 40px 0 15px;
+}
+.subHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  .tabber {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #333333;
+    opacity: 0.6;
+    font-family: "Poppins";
+    border: none;
+    background: transparent;
+    &.active {
+      color: #3661ed;
+      opacity: 1;
+      font-size: 22px;
+      position: relative;
+      line-height: 33px;
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 90%;
+        margin: auto;
+        height: 2px;
+        background: #3661ed;
+      }
+    }
+  }
+  .button {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.secondary {
+      background: rgba(0, 0, 0, 0.05);
+      border-radius: 5px;
+      width: 30px;
+      height: 30px;
+      &:not(last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.dFlex {
+  display: flex;
+  align-items: center;
+}
+.row {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  justify-content: space-between;
+  .chart {
+    width: 70%;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 28px;
+    box-sizing: border-box;
+  }
+  .date {
+    width: 25%;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 26px 21px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    &-title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      padding: 10px;
+      text-align: center;
+      color: #000000;
+      display: block;
+      background: #f8f8f8;
+      border-radius: 5px;
+      margin-bottom: 12px;
+      &:mb{
+      margin-bottom: 30px;
+
+      }
+    }
+    .date-picker {
+      display: flex;
+      justify-content: space-between;
+      & > div {
+        width: 48%;
+      }
+      flex-wrap: wrap;
+      .save {
+        width: 100%;
+        background: #3661ed;
+        border-radius: 8px;
+        padding: 7px;
+        box-sizing: border-box;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #ffffff;
+        cursor: pointer;
+        border: none;
+        margin-top: 20px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.heading {
+  font-family: "Inter";
+  margin-bottom: 4px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.table_{
+    background-color: white;
+}
