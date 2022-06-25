@@ -131,9 +131,36 @@
           box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.2);
         }
 
+<<<<<<< HEAD
+	&-action{
+		outline: none;
+		border: none;
+		background: transparent;
+		position: relative;
+		cursor: pointer;
+		&-before{
+			position: absolute;
+			right: 13px;
+			top: -21px;
+			transform: rotate(-180deg);
+			box-shadow: 6px 6px 119px rgba(0, 0, 0, 0.2);
+		}
+		&-menu{
+			position: absolute;
+			background: #FFFFFF;
+			z-index: 10;
+			box-shadow: 6px 6px 17px rgba(0, 0, 0, 0.2);
+			border-radius: 2px;
+			display: flex;
+			flex-direction: column;
+			left: -62px;
+			top: 37px;
+			display: none;
+=======
         &__icon {
           margin-right: 5px;
         }
+>>>>>>> 5d57b50e25e37d6b0bf73cbce7d9ad259df1bcf9
 
         &__text {
           width: 100%;

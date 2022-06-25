@@ -1,0 +1,125 @@
+.group-list{
+	display: flex;
+	align-items: center;
+	background: #FFFFFF;
+	box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.2);
+	padding: 9.5px 20px;
+	justify-content: space-between;
+	&-left{
+		display: flex;
+		align-items: center;
+
+		&__number{
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 20px;
+			color: rgba(51, 51, 51, 0.8);
+			margin-right: 15px;
+		}
+
+		&-group{
+			display: flex;
+			flex-direction: column;
+
+			&__name{
+				font-family: 'Poppins';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 24px;
+				color: #011D78;
+				margin-bottom: 5px;
+			}
+
+			&__teacher{
+
+				font-family: 'Poppins';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 17px;
+				color: #000000;
+				opacity: 0.6;
+			}
+		}
+	}
+
+
+	&-students{
+		&__text{
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 21px;
+			display: flex;
+			align-items: center;
+			letter-spacing: -0.022em;
+			color: #000000;
+
+		}
+	}
+
+	&-lesson{
+		display: flex;
+		flex-direction: column;
+
+		&__week{
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 21px;
+			color: #000000;
+			margin-bottom: 5px;
+		}
+
+		&__time{
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 17px;
+			color: #000000;
+			opacity: 0.6;
+		}
+	}
+
+	&-beginning{
+		display: flex;
+		flex-direction: column;
+
+		&__date{
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 21px;
+			color: #000000;
+		}
+
+		&__term{
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 17px;
+			color: #000000;
+			opacity: 0.6;
+		}
+	}
+
+	&-end{
+
+		&__text{
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 21px;
+			color: #000000;
+		}
+	}
+}
