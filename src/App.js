@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { BrowserRouter as Router , Route , Routes } from 'react-router-dom';
 import useLocalStorage from 'use-local-storage'
-
+import './assets/style/index.scss';
 
 import HomePage from './Page/HomePage/HomePage';
 import AdminsPage from './Page/AdminsPage';
@@ -10,12 +10,13 @@ import SettingsPage from './Page/SettingsPage';
 import TeachersPage from './Page/TeachersPage';
 import StatisticPage from './Page/StatisticPage';
 import GroupsPage from './Page/GroupsPage';
-import './assets/style/index.scss';
 import SideBar from './container/SideBar/SideBar';
 import Header from './container/Header';
 import LoginPage from './Page/LoginPage';
-import { GetData } from './hook';
-import Modal from './components/Modal';
+import StudentsPage from './Page/StudentsPage';
+import LeadPage from './Page/LeadPage';
+
+
 
 
 const token = 'asdasdasdasdadasdad';
@@ -56,12 +57,14 @@ function App() {
                       <div className="app-inner-right-page">
                         <Routes>
                           <Route index path='/' element={<HomePage/>}/>
-                          <Route path='/admins' element={<AdminsPage/>}/>
-                          <Route path='/finance' element={<FinancePage/>}/>
-                          <Route path='/groups' element={<GroupsPage/>}/>
-                          <Route path='/teachers' element={<TeachersPage/>}/>
-                          <Route path='/statistic' element={<StatisticPage/>}/>
-                          <Route path='/settings' element={<SettingsPage/>}/>
+                          <Route path='/adminlar' element={<AdminsPage/>}/>
+                          <Route path='/moliya' element={<FinancePage/>}/>
+                          <Route path='/guruhlar' element={<GroupsPage/>}/>
+                          <Route path='/oquvchilar' element={<StudentsPage/>}/>
+                          <Route path='/oqituvchilar' element={<TeachersPage/>}/>
+                          <Route path='/lead' element={<LeadPage/>}/>
+                          <Route path='/statistika' element={<StatisticPage/>}/>
+                          <Route path='/sozlamalar' element={<SettingsPage/>}/>
                         </Routes>
                       </div>
                   </div>

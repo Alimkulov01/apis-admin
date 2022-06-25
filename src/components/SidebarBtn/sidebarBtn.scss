@@ -38,6 +38,10 @@
 			}
 		}
 	}
+	.settingsIcon{
+		width: 24px;
+		height: 24px;
+	}
 	&.active{
 		background: #f2f3fe;
 		.sidebarBtn__text{
@@ -54,6 +58,8 @@
 		&::before{
 			height: 100%;
 		}
+
+		
 	}
 	&:hover{
 		background: #f2f3fe;
