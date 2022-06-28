@@ -1,0 +1,36 @@
+.action-btn-wrapper{
+	position: relative;
+	
+
+	&__burger{
+		outline: none;
+		border: none;
+		background-color: #fff;
+		cursor: pointer;
+	}
+
+	.action-btn{
+		position: absolute;
+		width: 146px !important;
+		background: #FFFFFF;
+		box-shadow: 6px 6px 17px rgba(0, 0, 0, 0.2);
+		border-radius: 2px;
+		display: flex;
+		flex-direction: column;
+		left: -102px;
+		top: 41px;
+		display: none;
+     	z-index: 4;
+		&.active {
+			display: block;
+			background: #fff;
+		}
+		&__before {
+			position: absolute;
+			right: 13px;
+			top: -21px;
+			transform: rotate(-180deg);
+			box-shadow: 6px 6px 119px rgba(0, 0, 0, 0.2);
+		}
+	}
+}

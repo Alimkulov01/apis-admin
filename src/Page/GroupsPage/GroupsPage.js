@@ -3,7 +3,6 @@ import GroupListWrapper from '../../container/GruhListWrapper';
 import { Col, Row, Select } from 'antd';
 import axios from 'axios';
 
-
 import './GroupPage.scss';
 import InputSelect from '../../components/InputSelect/InputSelect';
 
@@ -12,9 +11,9 @@ const GroupsPage = (url)=>{
 	
 	const { Option } = Select;
 
-	const teacherSearchFunction = (teacher)=>{
-		axios.get(url ,  )
-	}
+	// const teacherSearchFunction = (teacher)=>{
+	// 	axios.get(url ,  )
+	// }
 
 
 	return(
@@ -35,12 +34,19 @@ const GroupsPage = (url)=>{
 				<Col span={12}>
 					<form action="get" className='group-page-search-form'>
 						<InputSelect/>
-						
 						<button className='group-page-search-form__button'>Search</button>
 					</form>
 				</Col>
 			</Row>
-			<div className="group-page-lists">
+			<div className="group-page-list">
+				<div className="group-page-list-title">
+					<span className='group-page-list-title__text'>№</span>
+					<span className='group-page-list-title__text'>Guruh nomi & O`qituvchi</span>
+					<span className='group-page-list-title__text'>O`quvchilar soni</span>
+					<span className='group-page-list-title__text'>Dars vaqti</span>
+					<span className='group-page-list-title__text'>Boshlanishi</span>
+					<span className='group-page-list-title__text'>Tugashi</span>
+				</div>
 				<GroupListWrapper/>
 			</div>
 		</div>

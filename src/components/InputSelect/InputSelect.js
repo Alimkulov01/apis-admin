@@ -31,6 +31,7 @@ const InputSelect = ({
 					<span className='inputSelect-menu-top__icon'><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" clipRule="evenodd" d="M7.91659 2.53334C4.94345 2.53334 2.53325 4.94354 2.53325 7.91668C2.53325 10.8898 4.94345 13.3 7.91659 13.3C10.8897 13.3 13.2999 10.8898 13.2999 7.91668C13.2999 4.94354 10.8897 2.53334 7.91659 2.53334ZM0.833252 7.91668C0.833252 4.00466 4.00457 0.833344 7.91659 0.833344C11.8286 0.833344 14.9999 4.00466 14.9999 7.91668C14.9999 11.8287 11.8286 15 7.91659 15C4.00457 15 0.833252 11.8287 0.833252 7.91668Z" fill="#3661ED"/><path fillRule="evenodd" clipRule="evenodd" d="M13.6327 14.1667L12.5 13.034L13.034 12.5L14.1667 13.6327L13.6327 14.1667Z" fill="#3661ED"/><path fillRule="evenodd" clipRule="evenodd" d="M13.5549 13.555C13.8505 13.2594 14.3297 13.2594 14.6253 13.555L19.1666 18.0963L18.0962 19.1667L13.5549 14.6254C13.2594 14.3298 13.2594 13.8506 13.5549 13.555Z" fill="#3661ED"/></svg></span>
 					<input className='inputSelect-menu-top__input' type="search" name="group" id="" placeholder='Qidirish'/>
 				</div>
+				
 				<div className="inputSelect-menu-bottom">
 					<div className="inputSelect-menu-bottom-btn">
 						<span className='inputSelect-menu-bottom-btn__icon'>
@@ -40,34 +41,6 @@ const InputSelect = ({
 					</div>
 
 					<div className="inputSelect-menu-bottom-wrapper">
-						<Link to={'#'} className="inputSelect-menu-bottom-wrapper-item">
-							<span className="inputSelect-menu-bottom-wrapper-item__name">{GroupName}</span>
-							<span className="inputSelect-menu-bottom-wrapper-item__count">{GroupCount}</span>
-						</Link>
-						<Link to={'#'} className="inputSelect-menu-bottom-wrapper-item">
-							<span className="inputSelect-menu-bottom-wrapper-item__name">{GroupName}</span>
-							<span className="inputSelect-menu-bottom-wrapper-item__count">{GroupCount}</span>
-						</Link>
-						<Link to={'#'} className="inputSelect-menu-bottom-wrapper-item">
-							<span className="inputSelect-menu-bottom-wrapper-item__name">{GroupName}</span>
-							<span className="inputSelect-menu-bottom-wrapper-item__count">{GroupCount}</span>
-						</Link>
-						<Link to={'#'} className="inputSelect-menu-bottom-wrapper-item">
-							<span className="inputSelect-menu-bottom-wrapper-item__name">{GroupName}</span>
-							<span className="inputSelect-menu-bottom-wrapper-item__count">{GroupCount}</span>
-						</Link>
-						<Link to={'#'} className="inputSelect-menu-bottom-wrapper-item">
-							<span className="inputSelect-menu-bottom-wrapper-item__name">{GroupName}</span>
-							<span className="inputSelect-menu-bottom-wrapper-item__count">{GroupCount}</span>
-						</Link>
-						<Link to={'#'} className="inputSelect-menu-bottom-wrapper-item">
-							<span className="inputSelect-menu-bottom-wrapper-item__name">{GroupName}</span>
-							<span className="inputSelect-menu-bottom-wrapper-item__count">{GroupCount}</span>
-						</Link>
-						<Link to={'#'} className="inputSelect-menu-bottom-wrapper-item">
-							<span className="inputSelect-menu-bottom-wrapper-item__name">{GroupName}</span>
-							<span className="inputSelect-menu-bottom-wrapper-item__count">{GroupCount}</span>
-						</Link>
 						<Link to={'#'} className="inputSelect-menu-bottom-wrapper-item">
 							<span className="inputSelect-menu-bottom-wrapper-item__name">{GroupName}</span>
 							<span className="inputSelect-menu-bottom-wrapper-item__count">{GroupCount}</span>

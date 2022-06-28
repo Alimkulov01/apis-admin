@@ -1,0 +1,1 @@
+export { defaoult } from './AdminSingelPage';

@@ -4,11 +4,10 @@
 	background: #FFFFFF;
 	box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.2);
 	padding: 9.5px 20px;
-	justify-content: space-between;
 	&-left{
 		display: flex;
 		align-items: center;
-
+		width: 29%;
 		&__number{
 			font-family: 'Poppins';
 			font-style: normal;
@@ -48,6 +47,7 @@
 
 
 	&-students{
+		width: 15%;
 		&__text{
 			font-family: 'Poppins';
 			font-style: normal;
@@ -65,7 +65,7 @@
 	&-lesson{
 		display: flex;
 		flex-direction: column;
-
+		width: 25%;
 		&__week{
 			font-family: 'Poppins';
 			font-style: normal;
@@ -90,7 +90,7 @@
 	&-beginning{
 		display: flex;
 		flex-direction: column;
-
+		width: 20%;
 		&__date{
 			font-family: 'Poppins';
 			font-style: normal;

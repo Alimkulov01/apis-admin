@@ -1,0 +1,26 @@
+.admin-singel-page{
+	margin: 18px 30px;
+	background-color: #FFF;
+	display: flex;
+	align-items: flex-start;
+
+	&-left{
+
+
+		&-action{
+			display: flex;
+			align-items: flex-start;
+
+			&__btn{
+				outline: none;
+				border: none;
+				background: transparent;
+				width: 30px;
+				height: 30px;
+				margin-right: 10px;
+				
+			}
+		}
+	}
+
+}

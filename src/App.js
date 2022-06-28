@@ -15,6 +15,7 @@ import Header from './container/Header';
 import LoginPage from './Page/LoginPage';
 import StudentsPage from './Page/StudentsPage';
 import LeadPage from './Page/LeadPage';
+import AdminSingelPage from './Page/AdminSingelPage/AdminSingelPage';
 
 
 
@@ -58,6 +59,7 @@ function App() {
                         <Routes>
                           <Route index path='/' element={<HomePage/>}/>
                           <Route path='/adminlar' element={<AdminsPage/>}/>
+                          <Route path='/adminlar/:id' element={<AdminSingelPage/>}/>
                           <Route path='/moliya' element={<FinancePage/>}/>
                           <Route path='/guruhlar' element={<GroupsPage/>}/>
                           <Route path='/oquvchilar' element={<StudentsPage/>}/>

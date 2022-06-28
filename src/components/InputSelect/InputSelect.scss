@@ -30,16 +30,15 @@
 
 	&-menu{
 		position: absolute;
-		background: #fff;
 		z-index: 5;
+		background: #FFFFFF;
 		box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12);
 		border-radius: 5px;
 		top: 40px;
 		transition: ease-in-out 0.7s;
 		height: 0 !important;
-		perspective: 1000px;
+		overflow: hidden;
 		
-
 		&.active{
 			height: 290px;
 			overflow: visible;

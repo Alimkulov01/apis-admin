@@ -3,8 +3,13 @@ import { useState , useEffect} from "react";
 import AdminListItem from "../../components/AdminListItem/AdminListItem";
 import './adminListWrapper.scss';
 import CountUp from 'react-countup';
+import  Modal from "../../components/Modal";
+import InputMask from "react-input-mask";
+import { useRef } from "react";
 
-const AdminListWrapper =({ numberOfAdmins  })=>{
+import UniversalFormModal from "../../components/UniversalFormModal/UniversalFormModal";
+
+const AdminListWrapper =({})=>{
 
 	const [ admin , setAdmin ] =useState([])
 	const [currentPage , setCurrentPage] = useState(1)
@@ -14,7 +19,6 @@ const AdminListWrapper =({ numberOfAdmins  })=>{
 		axios
 		.get('https://jsonplaceholder.typicode.com/users')
 		.then((res)=>{
-			console.log(res.data)
 			setAdmin(res.data)
 		})
 		.catch((err)=>{
@@ -25,21 +29,30 @@ const AdminListWrapper =({ numberOfAdmins  })=>{
 
 	//  Get current list 
 
+	
 	const indexOfLastList = currentPage * adminPerPage;
 	const indexOfFirstList = indexOfLastList - adminPerPage;
 	const currentList = admin.slice(indexOfFirstList , indexOfLastList);
 
 	// admin modal oppen function
 
-	const [adminModal , setAdminModal] = useState(false)
+	const [delateSstate, setDelateSstate] = useState(false);
+	const [modalState, setModalState] = useState(false);
 
-	const AdminModalHandel =()=>{
 
+	const AdminModalHandel =(e)=>{
+		e.preventDefault();
+		setDelateSstate(!delateSstate);
+   	setModalState(true);
 	}
+	
+	
+
+
 	
 	return(
 		<div className="admin-list-wrapper">
-
+		
 			<div className="admin-list-wrapper-header">
 				<div className="admin-list-wrapper-header__title"> Admins (<CountUp start={0} end={admin.length} duration={0.9}/>)</div>
 				
@@ -79,6 +92,11 @@ const AdminListWrapper =({ numberOfAdmins  })=>{
 					/>
 				))
 			}
+      <UniversalFormModal
+        title={'Admin qo`shish'}
+				modalState={modalState}
+				setModalState={setModalState}
+      />
 		</div>
 	)
 }

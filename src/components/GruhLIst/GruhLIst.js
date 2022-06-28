@@ -1,10 +1,37 @@
-
-
 import { Link } from 'react-router-dom';
+import ActionBtn from '../ActionBtn/ActionBtn';
 import './GruhLIst.scss';
 
+import  { GreenEditICon , YellowMessageIcon , ArchiveIcon ,TrashIcon } from '../../assets/icons/index'
+import { useState } from 'react';
+import ActionMenuWrapper from '../../container/ActionMenuWrapper/ActionMenuWrapper';
+
+const actionBtnArr = [
+	{
+		icon: <GreenEditICon/>,
+		text : 'O`zgartirish',
+		styleClassName: 'green',
+	},
+	{
+		icon: <YellowMessageIcon/>,
+		text : 'Xabar yozish',
+		styleClassName: 'yellow',
+	},
+	{
+		icon: <ArchiveIcon/>,
+		text : 'Arxivlash',
+		styleClassName: 'ink',
+	},
+	{
+		icon: <TrashIcon/>,
+		text : 'O`chirish',
+		styleClassName: 'red',
+	},
+	
+]
 
 const GruhLIst = ({groupsId , groupsName , groupsTeacher , NumOfStudents ,lessonWeek ,lessonTime,  beginningDate , lessonTerm , endDate })=>{
+
 	return(
 		<div className="group-list" id={groupsId}>
 			<div className="group-list-left">
@@ -29,6 +56,12 @@ const GruhLIst = ({groupsId , groupsName , groupsTeacher , NumOfStudents ,lesson
 			</div>
 			<div className="group-list-end">
 				<span className='group-list-end__text'>{endDate}</span>
+			</div>
+
+			<div className="group-list-action">
+				<ActionMenuWrapper
+					actionArr={actionBtnArr}
+				/>
 			</div>
 		</div>
 	)
